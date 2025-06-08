@@ -1,0 +1,19 @@
+/* Styles pour kaghoma.html */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(''); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'arrière-plan */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(56, 54, 54, 0.062); /* Fond blanc semi-transparent */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(233, 232, 232); /* Ombre légère */
+}

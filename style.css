@@ -1,0 +1,153 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #181717ce;
+    color: #e9e0e0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+      background-color: #181717ce;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #004080;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    font-weight: center;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #0059b3;
+}
+
+.hero {
+    background-image: url('Virunga.jpg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #ffc107;
+    padding: 12px 25px;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-weight: bold;
+    color: black;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e0a800;
+}
+
+.actualites {
+    padding: 60px 20px;
+    background-color: #e6f2ff;
+    text-align: center;
+}
+
+.actualites h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #003366;
+}
+
+.actu-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+
+.actualites article {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actualites h3 {
+    font-size: 1.2em;
+    color: #0059b3;
+}
+
+.actualites a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
