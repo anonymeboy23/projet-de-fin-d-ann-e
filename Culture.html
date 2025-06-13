@@ -61,6 +61,48 @@
       text-align: center;
       padding: 1rem;
     }
+    p.copyright {
+      font-size: 10px;
+      color: #666;
+      text-align: center;
+      position: fixed;
+      bottom: 5px;
+      width: 100%;
+      opacity: 0.6;
+      z-index: 10;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .image-container {
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: inline-block;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-zoom {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s ease, filter 0.5s ease;
+    }
+
+    .image-container:hover .image-zoom {
+      transform: scale(1.08);
+      filter: brightness(105%) contrast(105%) saturate(110%);
+    }
+
+    .image-container:hover {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      transform: translateY(-3px);
+      cursor: pointer;
+    }
+
+    .image-container:active .image-zoom {
+      transform: scale(1.04);
+    }
+
   </style>
 </head>
 <body>
@@ -83,27 +125,34 @@
     <section id="musique">
       <h2>Musique</h2>
       <p>La musique congolaise est mondialement connue, notamment grâce au rumba et au ndombolo. Des artistes comme Franco Luambo, Papa Wemba ou encore Koffi Olomidé ont popularisé ces rythmes entraînants.</p>
-      <img src="Antitapas Rumba Carnival Night.jpeg" alt="Concert de rumba congolaise">
+     <div class="image-container">
+      <img src="Antitapas Rumba Carnival Night.jpeg" alt="Concert de rumba congolaise" class="image-zoom">
+    </div>
     </section>
+
 
     <section id="danse">
       <h2>Danse</h2>
       <p>La danse occupe une place centrale dans la vie sociale. Le <em>ndombolo</em> et le <em>mutuashi</em> sont des styles très pratiqués, souvent en accompagnement des cérémonies et des célébrations.</p>
-      <img src="perfect.jpeg" alt="Couple dansant le ndombolo">
+      <div class="image-container">
+      <img src="perfect.jpeg" alt="Couple dansant le ndombolo" class="image-zoom">
+    </div>
     </section>
 
     <section id="art">
       <h2>Art & Artisanat</h2>
       <p>Les sculpteurs congolais fabriquent des masques et statuettes en bois, symboles de forces spirituelles. Les pagnes colorés, tissés à la main, illustrent la finesse de l’art textile traditionnel.</p>
-      <img src="Buy good ancient antiquities from Africa contact us on WhatsApp_+237652026586.jpeg" alt="Masque traditionnel congolais">
+     <div class="image-container">
+      <img src="Buy good ancient antiquities from Africa contact us on WhatsApp_+237652026586.jpeg" alt="Masque traditionnel congolais" class="image-zoom">
+    </div>
     </section>
 
     <section id="cuisine">
       <h2>Cuisine</h2>
       <p>La gastronomie congolaise mêle saveurs locales et influences régionales. Le <em>fufu</em> (banane plantain pilée) accompagné de <em>pondu</em> (feuilles de manioc) ou de <em>moambe</em> (sauce à base de noix de palme) est un incontournable.</p>
-      <img src="Fufu and soup.jpeg" alt="Plat de fufu et moambe">
-    </section>
-
+       <div class="image-container">
+      <img src="Fufu and soup.jpeg" alt="Plat de fufu et moambe" class="image-zoom">
+    </div>
   <!-- Boutons de navigation -->
 <div class="nav-buttons">
   <a href="RDC.html" class="btn-nav prev">← Précédent</a>
